@@ -29,7 +29,7 @@ export const AddBlog = async (req, res) => {
             transformation: [
                 {quality: 'auto'},   // Auto compression
                 {format: 'webp'},    // Modern web format
-                {width: '1280'}     // resizing width
+                {width: '1080'}     // resizing width
             ]
         });
 
@@ -89,6 +89,8 @@ export const deleteBlogById = async (req, res) => {
             res.json({success: false, message: error.message})
     }
 }
+
+
 
 
 
