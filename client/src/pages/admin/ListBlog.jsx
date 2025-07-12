@@ -11,13 +11,12 @@ const ListBlog = () => {
   const [blogs, setBlogs] = useState([])
   const {axios} = useAppContext()
 
+
   const fetchBlogs = async () => {
-    console.log("hey amn")
     try{
       const {data} = await axios.get('/api/admin/blogs')
-      console.log("blog-data: ", data)
+
       if(data.success){
-        console.log("New blogs fetched from backend:", data.blogs);
         setBlogs(data.blogs)
       }else{
         toast.error(data.message)

@@ -39,8 +39,6 @@ const AddBlog = () => {
           isPublished
         }
 
-        console.log(blog);
-
         const formData = new FormData()
         formData.append('blog', JSON.stringify(blog))
         formData.append('image', image)

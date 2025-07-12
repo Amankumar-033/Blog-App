@@ -18,12 +18,10 @@ const BlogTableItem = ({blog, fetchBlogs, index}) => {
     if(!confirm) return;
 
     try{
-      const {data} = await axios.post('/api/blog/delete', {id: blog._id})
+      const {data} = await axios.post('/api/blog/delete', {blogId: blog._id})
       if(data.success){
         toast.success(data.message)
-        console.log("Calling fetchblogs...");
         await fetchBlogs()
-        console.log("fetchblogs completed");
       }
       else{
         toast.error(data.error)

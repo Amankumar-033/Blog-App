@@ -86,7 +86,7 @@ export const deleteBlogById = async (req, res) => {
 
         res.json({success: true, message: "Blog deleted successfully"})
     }catch(error){
-            res.json({success: false, message: error.message})
+        res.json({success: false, message: error.message})
     }
 }
 

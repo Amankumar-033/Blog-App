@@ -23,7 +23,6 @@ export const adminLogin = async (req, res) => {
 
 
 export const getAllblogsAdmin = async (req, res) => {
-    console.log("get blogs")
     try{
         const blogs = await Blog.find({}).sort({createdAt: -1})
         res.json({success: true, blogs})
