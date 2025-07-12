@@ -77,7 +77,7 @@ export const deleteCommentbyId = async (req, res) => {
 export const approveCommentbyId = async (req, res) => {
     try{
         const { id } = req.body
-        await Comment.findByIdAndDelete(id, {isApproved: true})
+        await Comment.findByIdAndUpdate(id, {isApproved: true})
         res.json({success: true, message: "Comment approved successfully"})
     }catch(error){
         res.json({success: true, message: error.message})
