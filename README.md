@@ -30,7 +30,7 @@ A feature-rich, full-stack blog platform built with the MERN stack (MongoDB, Exp
 
 ## 🛠️ Tech Stack
 
-| Category      | Technology / Service                                 |
+|Category      | Technology / Service                                 |
 |---------------|------------------------------------------------------|
 | **Frontend**  | `React.js`, `Vite`, `Context API`, `Tailwind CSS`    |
 | **Backend**   | `Node.js`, `Express.js`                              |
