@@ -140,36 +140,76 @@ The application will be available at `http://localhost:5173` (or another port if
 Here is the file structure of the application:
 
 ```
+
+
 .
 ├── client/
-│   ├── .env
-│   ├── src/
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   ├── assets/
-│   │   ├── components/
-│   │   ├── context/
-│   │   └── pages/
-│   └── vercel.json
-└── server/
-    ├── .env
-    ├── server.js
-    ├── configs/
-    │   ├── db.js
-    │   ├── gemini.js
-    │   └── imageKit.js
-    ├── controllers/
-    │   ├── adminController.js
-    │   └── blogController.js
-    ├── middlewares/
-    │   ├── auth.js
-    │   └── multer.js
-    ├── models/
-    │   ├── Blog.js
-    │   └── Comment.js
-    └── routes/
-        ├── adminRoutes.js
-        └── blogRoutes.js
+│   ├── .env                 
+│   ├── node_modules/        
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── vercel.json
+│   ├── vite.config.js
+│   ├── public/
+│   │   ├── favicon.svg
+│   │   └── vite.svg
+│   └── src/
+│       ├── App.jsx
+│       ├── index.css
+│       ├── main.jsx
+│       ├── assets/           
+│       ├── components/
+│       │   ├── BlogCard.jsx
+│       │   ├── Bloglist.jsx
+│       │   ├── Footer.jsx
+│       │   ├── Header.jsx
+│       │   ├── Loader.jsx
+│       │   ├── Navbar.jsx
+│       │   ├── Newsletter.jsx
+│       │   └── admin/
+│       │       ├── BlogTableItem.jsx
+│       │       ├── CommentTableItem.jsx
+│       │       ├── Login.jsx
+│       │       └── Sidebar.jsx
+│       ├── context/
+│       │   └── AppContext.jsx
+│       └── pages/
+│           ├── Blog.jsx
+│           ├── Home.jsx
+│           └── admin/
+│               ├── AddBlog.jsx
+│               ├── Comment.jsx
+│               ├── Dashboard.jsx
+│               ├── Layout.jsx
+│               └── ListBlog.jsx
+├── server/
+│   ├── .env                 
+│   ├── node_modules/        
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── server.js
+│   ├── vercel.json
+│   ├── configs/
+│   │   ├── db.js
+│   │   ├── gemini.js
+│   │   └── imageKit.js
+│   ├── controllers/
+│   │   ├── adminController.js
+│   │   └── blogController.js
+│   ├── middlewares/
+│   │   ├── auth.js
+│   │   └── multer.js
+│   ├── models/
+│   │   ├── Blog.js
+│   │   └── Comment.js
+│   └── routes/
+│       ├── adminRoutes.js
+│       └── blogRoutes.js
+├── README.md
+
+
 ```
 
 ---
